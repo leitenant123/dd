@@ -3,6 +3,10 @@
 ## [Unreleased][unreleased]
 
 - Add cors to server config
+- Try to coerce dependency names under `node`, `npm`, `metarhia` keys.
+  dependencies with '/', '@', '-' will also be available by removing those
+  symbols and converting name to camelCase format.
+  e.g `@metahia/common` -> `metarhiaCommon`, `date-fns` -> `dateFns`.
 
 ## [2.6.6][] - 2021-10-12
 
